@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".SplashScreeenActivity">
+        <activity android:name=".SplashScreeenActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -18,7 +19,8 @@
         </activity>
 
         <activity android:name=".PercentageActivity"
-            android:label="@string/percentage_calculator">
+            android:label="@string/percentage_calculator"
+            android:parentActivityName=".MainActivity">
         </activity>
 
         <activity

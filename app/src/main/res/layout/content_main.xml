@@ -26,7 +26,7 @@
 
     <EditText
         android:id="@+id/text_value"
-        android:layout_width="wrap_content"
+        android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
@@ -34,6 +34,7 @@
         android:importantForAutofill="no"
         android:inputType="number"
         android:textAlignment="center"
+        android:textColorHint="#140A0909"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/intro_text"
         app:layout_constraintStart_toStartOf="@+id/intro_text"
@@ -48,6 +49,7 @@
         android:hint="@string/result"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColorHint="#1BE91E63"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="@+id/text_value"
         app:layout_constraintHorizontal_bias="1.0"

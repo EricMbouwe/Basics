@@ -2,7 +2,7 @@
     <string name="app_name">Basics</string>
     <string name="action_settings">Settings</string>
     <string name="enter_a_value">Enter a value to multiply</string>
-    <string name="ex_25">Ex : 25</string>
+    <string name="ex_25">Ex: 1024 </string>
     <string name="result">Result</string>
     <string name="multiply">Multiply</string>
     <string name="percentage_calculator">Percentage Calculator</string>
