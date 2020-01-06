@@ -1,5 +1,6 @@
 package com.lecslt.basics;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -11,6 +12,9 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,22 +28,29 @@ public class MainActivity extends AppCompatActivity {
         Button button = findViewById(R.id.button);
         Button percentageCalc = findViewById(R.id.percentage_calc);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                EditText textValue = findViewById(R.id.text_value); // on associe lobjet de la vue a une variable pour le stocker en memoire.
-                TextView resultValue = findViewById(R.id.result_text);
-
-                String stringValue = textValue.getText().toString(); // on caste la valeur de notre variable textValue en String
-                int startValue = Integer.parseInt(stringValue); // on caste la valeur de notre variable String en int pour effectuer nos operations.
-                int endValue = Multiplicateur.doubleValue(startValue); // on applique la methode doubleValue de la classe Multiplicateur pour avoir le double de notre valeur de depart quand on appui sur le bouton.
-                resultValue.setText(Integer.toString(endValue)); // on caste la variable endValue(retour en arriere) en String pour pouvoir l'afficher.
 
 
-                Snackbar.make(view, "Changed value " + startValue + " to " + endValue , Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    try {
+                        EditText textValue = findViewById(R.id.text_value); // on associe lobjet de la vue a une variable pour le stocker en memoire.
+                        TextView resultValue = findViewById(R.id.result_text);
+
+                        String stringValue = textValue.getText().toString(); // on caste la valeur de notre gvariable textValue en String
+                        int startValue = Integer.parseInt(stringValue); // on caste la valeur de notre variable String en int pour effectuer nos operations.
+                        int endValue = Multiplicateur.doubleValue(startValue); // on applique la methode doubleValue de la classe Multiplicateur pour avoir le double de notre valeur de depart quand on appui sur le bouton.
+                        resultValue.setText(Integer.toString(endValue)); // on caste la variable endValue(retour en arriere) en String pour pouvoir l'afficher.
+
+                        Snackbar.make(view, "Changed value " + startValue + " to " + endValue , Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();
+                    }catch (Exception e){}
+
+                }
+            });
+
+
 
         percentageCalc.setOnClickListener(new View.OnClickListener() {
             @Override

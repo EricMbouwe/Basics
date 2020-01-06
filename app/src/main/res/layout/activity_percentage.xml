@@ -107,7 +107,7 @@
         android:layout_marginTop="40dp"
         android:background="#FC009688"
         android:padding="10dp"
-        android:text="@string/calculate"
+        android:text="@string/calculate_percentage"
         android:textColor="#F8F5FAF9"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/number_text"

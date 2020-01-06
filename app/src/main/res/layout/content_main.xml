@@ -26,8 +26,8 @@
 
     <EditText
         android:id="@+id/text_value"
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
+        android:layout_width="262dp"
+        android:layout_height="74dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/ex_25"
@@ -63,7 +63,7 @@
         android:layout_marginTop="50dp"
         android:background="#BFE91E63"
         android:padding="10dp"
-        android:text="@string/multiply"
+        android:text="@string/calculate_percentage"
         android:textAlignment="center"
         android:textColor="#FAF0EAEA"
         android:textSize="20sp"
